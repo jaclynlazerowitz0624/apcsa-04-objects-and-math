@@ -6,7 +6,7 @@ public class DiceSimulator {
         Random random = new Random();
         int die1 = random.nextInt(1,7);  // random #s 1-6
         int die2 = random.nextInt(1, 7);
-        System.out.println("Die 1: " + die1);
+        System.out.println("Die 1: " + (int) Math.random(die1) * 6);
         System.out.println("Die 2: " + die2);
         System.out.println("Total: " + (die1+die2));
 
