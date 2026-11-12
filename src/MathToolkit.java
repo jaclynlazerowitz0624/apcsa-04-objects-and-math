@@ -8,24 +8,30 @@ public class MathToolkit {
         // 5. Print a random year from 1990 to 2010 inclusive. State n and min in a comment. Commit and
         //    push.
     
-    int o = 6;
-    int a = 8;
-    int h = Math.pow(o, 2) + Math.pow(a, 2);
-    int solved = Math.sqrt(h);
+    double o = 6;
+    double a = 8;
+    double h = Math.pow(o, 2) + Math.pow(a, 2);
+    double solved = Math.sqrt(h);
+    System.out.println(solved);
 
-    int x = (4-1);
-    int y = (6-2);
-    int d = Math.pow(x, 2) + Math.pow(y, 2);
-    int distance = Math.sqrt(d);
+    double x = (4-1);
+    double y = (6-2);
+    double d = Math.pow(x, 2) + Math.pow(y, 2);
+    double distance = Math.sqrt(d);
+    System.out.println(distance);
 
-    int abs1 = Math.abs(12-30);
-    int abs2 = Math.abs(7.5-9.25);
+    double abs1 = Math.abs(12-30);
+    double abs2 = Math.abs(7.5-9.25);
+    System.out.println(abs1);
+    System.out.println(abs2);
 
-    System.out.println((char)('B' + (int)(Math.random() * 26)));
+    System.out.println((char)('A' + (int)(Math.random() * 26)));
 
-    System.out.print(Math.random(1990, 2011));
-    // min = 1990
-    // n = 2011-1990 = 21 +1 = 22, n=22
+    int min = 1990;
+    int n = 22;
+    int year = min + (int)(Math.random() * n);
+    System.out.println(year);   
+
     
     }
 }
